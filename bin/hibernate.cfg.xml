@@ -1,5 +1,6 @@
-<?xmlversion="1.0"encoding="UTF-8"?>
-<!DOCTYPEhibernate-configurationPUBLIC"-//Hibernate/HibernateConfiguration DTD3.0//EN""http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/HibernateConfiguration DTD3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
@@ -11,6 +12,6 @@
         <property name="show_sql">true</property><!--entruemuestrahqlenconsola-->
 
         <!--MapeoEntidades-->
-        <mappingresource="mapeos/Cliente.hbm.xml"/>
+        <mapping resource="mapeos/Cliente.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

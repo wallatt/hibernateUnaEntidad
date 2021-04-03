@@ -1,16 +1,16 @@
-<?xmlversion="1.0"encoding="UTF-8"?>
-<!DOCTYPEhibernate-mappingPUBLIC"-//Hibernate/HibernateMapping DTD 3.0//EN"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-<class name="datos.Cliente"table="cliente">
-    <id column="idCliente"name="idCliente">
-        <generatorclass="identity"/>
+<class name="datos.Cliente" table="cliente">
+    <id column="idCliente" name="idCliente">
+        <generator class="identity"/>
     </id>
-<propertycolumn="apellido"name="apellido"type="string"/>
-<propertycolumn="nombre"name="nombre"type="string"/>
-<propertycolumn="dni"name="dni"type="int"/>
-<propertycolumn="fechaDeNacimiento"name="fechaDeNacimiento"type="LocalDate"/>
-<propertycolumn="baja"name="baja"type="boolean"/>
+<property column="apellido" name="apellido" type="string"/>
+<property column="nombre" name="nombre" type="string"/>
+<property column="dni" name="dni" type="int"/>
+<property column="fechaDeNacimiento" name="fechaDeNacimiento" type="LocalDate"/>
+<property column="baja" name="baja" type="boolean"/>
 </class>
 </hibernate-mapping>

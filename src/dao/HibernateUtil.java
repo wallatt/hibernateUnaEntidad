@@ -13,8 +13,10 @@ public class HibernateUtil {
         try{
             if (sessionFactory == null){
                 StandardServiceRegistry standardRegistry = new
-                StandardServiceRegistryBuilder().configure("hibernate.cgf.xml").build();
-
+                StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
+                
+                Metadata metadata = new MetadataSources(standardRegistry).getMetadataBuilder().build();
+                sessionFactory = metadata.getSessionFactoryBuilder().build();
             }
         }catch(HibernateException he){
                 System.err.println("ERROR en la inicializacion de SessionFactory: " + he);

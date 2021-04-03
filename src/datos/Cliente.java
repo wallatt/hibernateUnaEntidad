@@ -3,7 +3,7 @@ package datos;
     
 public class Cliente {
     private long idCliente;
-    private String apeliido;
+    private String apellido;
     private String nombre;
     private int dni;
     private LocalDate fechaDeNacimiento;
@@ -12,8 +12,8 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(String apeliido, String nombre, int dni, LocalDate fechaDeNacimiento) {
-        this.apeliido = apeliido;
+    public Cliente(String apellido, String nombre, int dni, LocalDate fechaDeNacimiento) {
+        this.apellido = apellido;
         this.nombre = nombre;
         this.dni = dni;
         this.fechaDeNacimiento = fechaDeNacimiento;
@@ -28,12 +28,12 @@ public class Cliente {
         this.idCliente = idCliente;
     }
 
-    public String getApeliido() {
-        return this.apeliido;
+    public String getApellido() {
+        return this.apellido;
     }
 
-    public void setApeliido(String apeliido) {
-        this.apeliido = apeliido;
+    public void setApellido(String apeliido) {
+        this.apellido = apeliido;
     }
 
     public String getNombre() {
@@ -77,7 +77,7 @@ public class Cliente {
     public String toString() {
         return "{" +
             " idCliente='" + getIdCliente() + "'" +
-            ", apeliido='" + getApeliido() + "'" +
+            ", apeliido='" + getApellido() + "'" +
             ", nombre='" + getNombre() + "'" +
             ", dni='" + getDni() + "'" +
             ", fechaDeNacimiento='" + fechaDeNacimiento.getMonthValue()+" "+ fechaDeNacimiento.getYear()+ "'" +
