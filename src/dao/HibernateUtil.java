@@ -16,15 +16,16 @@ public class HibernateUtil {
                 StandardServiceRegistryBuilder().configure("hibernate.cgf.xml").build();
 
             }
-            catch(HibernateException he){
+        }catch(HibernateException he){
                 System.err.println("ERROR en la inicializacion de SessionFactory: " + he);
 
                 throw new ExceptionInInitializerError(he);
             }
             return sessionFactory;
         }
+        
     }
     
-}
+
 
 
