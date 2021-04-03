@@ -1,0 +1,16 @@
+<?xmlversion="1.0"encoding="UTF-8"?>
+<!DOCTYPEhibernate-mappingPUBLIC"-//Hibernate/HibernateMapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="datos.Cliente"table="cliente">
+    <id column="idCliente"name="idCliente">
+        <generatorclass="identity"/>
+    </id>
+<propertycolumn="apellido"name="apellido"type="string"/>
+<propertycolumn="nombre"name="nombre"type="string"/>
+<propertycolumn="dni"name="dni"type="int"/>
+<propertycolumn="fechaDeNacimiento"name="fechaDeNacimiento"type="LocalDate"/>
+<propertycolumn="baja"name="baja"type="boolean"/>
+</class>
+</hibernate-mapping>
